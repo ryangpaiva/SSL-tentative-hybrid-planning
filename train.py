@@ -51,7 +51,7 @@ if __name__ == "__main__":
     # ------------------------------------------------------
     test_env = gym.make("SSL-Project", render_mode="human")  # new instance
     obs, _ = test_env.reset()
-    for _ in range(1000):  # run for 1000 timesteps
+    for _ in range(10000):  # run for 1000 timesteps
         action, _states = model.predict(obs, deterministic=True)
         obs, reward, done, truncated, info = test_env.step(action)
         print(reward)

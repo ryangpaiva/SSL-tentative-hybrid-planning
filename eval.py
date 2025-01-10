@@ -11,7 +11,7 @@ model = PPO.load("rSoccer_ppo_model", env=env)
 obs, info = env.reset()
 
 # 4) Loop and render
-for _ in range(10000):  # or whichever length
+for _ in range(100000):  # or whichever length
     action, _ = model.predict(obs, deterministic=True)
     obs, reward, done, truncated, info = env.step(action)
 

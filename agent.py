@@ -15,7 +15,6 @@ class ExampleAgent(BaseAgent):
     def step(self, robot, obstacles, teammates, targets):
         self.robot = robot
         self.targets = targets
-        obstacles = self.opponents
         self.decision(obstacles)
         self.post_decision()
         return Robot(id=self.id, yellow=self.yellow,

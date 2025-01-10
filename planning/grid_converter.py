@@ -2,7 +2,7 @@ from typing import List, Tuple
 import numpy as np
 
 class GridConverter:
-    def __init__(self, field_length: float, field_width: float, grid_size: int = 10):
+    def __init__(self, field_length: float, field_width: float, grid_size: int = 35):
         """
         Initialize grid converter for SSL environment
         

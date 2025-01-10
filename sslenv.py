@@ -13,7 +13,7 @@ import pygame
 from utils.CLI import Difficulty
 
 class SSLExampleEnv(SSLBaseEnv):
-    def __init__(self, render_mode=None, difficulty=Difficulty.EASY):
+    def __init__(self, render_mode="human", difficulty=Difficulty.MEDIUM):
         field = 2
         super().__init__(
             field_type=field,
